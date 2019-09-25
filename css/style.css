@@ -1,0 +1,154 @@
+html
+{
+  scroll-behavior: smooth;
+}
+* 
+{
+  margin: 0;
+}
+
+#header h2
+{
+	height          : 10%;
+    font-size       : 1.5em;
+    color           : #3B381E;
+    text-align      :center;
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    margin-left     : 40px;
+    margin-right    : 40px;
+    border-bottom   : 6px solid #3B381E;
+	background-color: #B7AD81;
+    font-family     : 'Roboto', sans-serif;
+    
+}
+
+img
+{
+	padding-top  : 20px;
+	height       : 20%; 
+	display      : block; 
+	margin       : auto;
+	border-radius: 25%;
+	width        : 20%;
+	text-align   : center;
+}
+
+.container 
+{
+	padding: 1% 5%;
+
+}
+.col 
+{
+	padding: 1em 10%;
+
+}
+
+/* content */
+.bio 
+{
+	padding-bottom: 0;
+}
+.bio h1
+{
+	padding-top: 5%;
+	font-family: 'Roboto', sans-serif;
+}
+.bio h2
+{
+	text-align   : center;
+	color        :#3B381E;
+	margin-bottom: 20px;
+	font-family  : 'Roboto', sans-serif;
+}
+.bio h3 
+{
+	text-align   : center;
+	color        : #818657;
+	margin-bottom: 20px;
+	font-family  : 'Roboto', sans-serif;
+}
+.bio p 
+{
+	margin-bottom: 5px;
+	font-size    : 20px;
+	font-family  : 'Roboto', sans-serif;
+
+}
+
+.profile 
+{
+	margin-bottom: 20px;
+}
+.profile .col
+{
+	padding: 10px;
+}
+.profile .fas , .profile .far
+{
+	margin-right: 5px;
+}
+.profile .row
+{
+	display              : grid;
+	grid-template-columns: 35% 5% 60%;
+}
+
+
+/* footer */
+footer 
+{
+	background-color: #B7AD81;
+	padding-bottom  : 0 !important;
+	margin-bottom   : auto;
+	margin-top      : auto;
+	margin-left     : 40px;
+	margin-right    : 40px;
+	border-top      : 6px solid #3B381E;
+}
+
+footer span 
+{
+	color: #3B381E;
+}
+.border-top
+{
+border-top: 2px solid #3B381E !important;
+}
+.contact-link a 
+{
+  margin: 0 5px;
+  color: #3B381E ;
+}
+
+
+@media (min-width: 666px) {
+  .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .content .col {
+    margin: 1em;
+  }
+  .profile .row{
+    grid-template-columns: 40% 5% 55%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  header {
+    position: absolute;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row{
+    grid-template-columns: repeat(3, auto);
+  }
+  .profile .row{
+    grid-template-columns: 15% 2% 33% 15% 2% 30%;
+  }
+}
